@@ -16,7 +16,7 @@ export function App() {
   return (
     <div className="px-5">
       <Timer nextBirthdayDate={nextBirthdayDate} />
-      <div className="mt-8 flex m-auto flex-wrap justify-center items-center gap-4 w-full max-w-screen-md">
+      <div className="mt-8 flex m-auto flex-wrap mb-8 justify-center items-center gap-4 w-full max-w-screen-md">
         {sortedBirthdaysListByEarlier.map((item) => {
           return (
             <BirthdaysCard

@@ -24,7 +24,7 @@ export function BirthdaysCard({ name, date }: BirthdayCardProps) {
   const formatedDate = format(date, "dd 'de' MMMM", { locale: ptBR })
 
   return (
-    <div className="border-2 w-full h-32 max-w-60 flex items-center justify-between flex-col rounded-md p-3">
+    <div className="border-2 w-full h-32 md:max-w-60 flex items-center justify-between flex-col rounded-md p-3">
       <div className="flex flex-col items-center">
         <span className="font-bold text-xl">{name}</span>
         <span className="text-lg">{formatCounter(date)}</span>

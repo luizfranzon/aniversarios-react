@@ -33,18 +33,18 @@ export function Timer({ nextBirthdayDate }: TimerProps) {
       <span className="font-bold absolute bg-[#09090b] -top-4 px-2">Próximo aniversário:</span>
       <div className="flex items-center flex-col gap-4 mb-2">
         <h1 className="font-black text-2xl">{name}</h1>
-        <div className="flex items-center font-roboto font-black text-7xl">
+        <div className="flex items-center font-roboto font-black text-5xl md:text-7xl">
           {totalDays > 0 ? (
             <div>
-              <span suppressHydrationWarning >{totalDays.toString().length < 2 ? `0${totalDays}` : totalDays}</span>
+              <span>{totalDays.toString().length < 2 ? `0${totalDays}` : totalDays}</span>
               <span>:</span>
             </div>
           ) : (null)}
-          <span suppressHydrationWarning >{totalHours.toString().length < 2 ? `0${totalHours}` : totalHours}</span>
+          <span>{totalHours.toString().length < 2 ? `0${totalHours}` : totalHours}</span>
           <span>:</span>
-          <span suppressHydrationWarning >{totalMinutes.toString().length < 2 ? `0${totalMinutes}` : totalMinutes}</span>
+          <span>{totalMinutes.toString().length < 2 ? `0${totalMinutes}` : totalMinutes}</span>
           <span>:</span>
-          <span suppressHydrationWarning >{totalSeconds.toString().length < 2 ? `0${totalSeconds}` : totalSeconds}</span>
+          <span>{totalSeconds.toString().length < 2 ? `0${totalSeconds}` : totalSeconds}</span>
         </div>
         <span className="font-bold text-white/90">({formatedDate})</span>
       </div>
