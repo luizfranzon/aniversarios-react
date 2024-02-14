@@ -32,6 +32,10 @@ export const birthdaysList = [
     "date": new Date(`${new Date().getFullYear()}-04-13T00:00:00-0300`)
   },
   {
+    "name": "Zeh",
+    "date": new Date(`${new Date().getFullYear()}-12-14T00:00:00-0300`)
+  },
+  {
     "name": "Paulo",
     "date": new Date(`${new Date().getFullYear()}-12-25T00:00:00-0300`)
   }
