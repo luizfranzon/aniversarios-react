@@ -18,6 +18,10 @@ export function BirthdaysCard({ name, date }: BirthdayCardProps) {
       return "Amanhã"
     }
 
+    if (differenceHours < 0) {
+      return "Já passou"
+    }
+
     return `Falta ${Math.floor(differenceHours / 24 + 1)} dias`
   }
 
